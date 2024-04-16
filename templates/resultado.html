@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+
+    <meta charset="UTF-8" />
+    <title>Resultado da Verificação</title>
+
+</head>
+<body>
+
+    <h2>Resultado da Verificação</h2>
+    {% if status == 'UP' %}
+        <p style="color: green">O site {{ url }} está <strong>UP</strong></p>
+    {% else %}
+        <p style="color: red">O site {{ url }} está <strong>DOWN</strong></p>
+    {% endif %}
+    
+
+</body>
+</html>
